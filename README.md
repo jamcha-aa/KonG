@@ -45,10 +45,11 @@ This is an example of KonGCode-Medium. Precise procedures are described at Okone
 7. Remove ttx files. Rename KonGCode-Medium\#1.otf to KonGCode-Medium.otf.
 8. Drag and Drop KonGCode-Medium.otf, which was generated previous section, into ttxs.cmd.
 9. Download [o_vmtx-fix](https://okoneya.jp/font/knowhow.html) and extract.
-10. Launch vmtx-fix.exe. Drag and Drop KonGCode-Medium.\_v\_m\_t\_x.ttx. \_KonGCode-Medium.\_v\_m\_t\_x.ttx is generated. Put it back to where KonGCode-Medium.ttx locate.
+10. Launch vmtx-fix.exe. Drag and Drop "KonGCode-Medium.\_v\_m\_t\_x.ttx" to it. "\_KonGCode-Medium.\_v\_m\_t\_x.ttx" is generated. Put it back to the original location.
 11. Open KonGCode-Medium.ttx
     - Edit "KonGCode-Medium.\_v\_m\_t\_x.ttx" to "\_KonGCode-Medium.\_v\_m\_t\_x.ttx".
-12. Drag and Drop KonGCode-Medium.ttx. into ttxs.cmd. ttxs.cmd generates a vertically-fixed font with the name of KonGCode-Medium\#1.otf.
+12. Drag and Drop KonGCode-Medium.ttx into ttxs.cmd.
+    - ttxs.cmd generates a vertically-fixed font with the name of KonGCode-Medium\#1.otf.
 
 ## History
 -   12-20-2017 Vertical writing supported.
