@@ -16,7 +16,7 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 
 ## Download
 
--   [Latest release](https://github.com/jamcha-aa/KonG/release/)
+-   [Latest release](https://github.com/jamcha-aa/KonG/tree/master/release)
 
 ## Procedure
 
