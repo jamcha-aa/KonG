@@ -29,12 +29,13 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>).
 
 1.  Install AFDKO.
-2.  rename ttx.cmd to ttxs.cmd.
-3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx created.
+2.  Copy ttx.cmd to ttxs.cmd.
+    - Edit ttxs.cmd "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py \%*" to "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py -a -s \%*"
+3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx are created.
 4.  Open KonGCode-Medium.ttx
-    - Rename KonGCode-Medium.\_c\_m\_a\_p.ttx to SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx.
+    - Edit "KonGCode-Medium.\_c\_m\_a\_p.ttx" to "SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx".
 5.  Drag and Drop SourceHanCodeJP-Medium.otf into ttxs.cmd.
-6.  Drag and Drop KonGCode-Medium.ttx. ttxs.cmd creates a CID-fixed font with the name of KonGCode-Medium\#1.otf.
+6.  Drag and Drop KonGCode-Medium.ttx. into ttxs.cmd. ttxs.cmd creates a CID-fixed font with the name of KonGCode-Medium\#1.otf.
 
 ## History
 
