@@ -21,20 +21,21 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 ## Procedure
 
 -   HKana, Kana, and VKana of Source Han Code JP are replaced to those of Source Han Serif with using [Fontforge](https://fontforge.github.io). Processed results were recorded to texts as .sfb.
+    + Fontforge can not read .sfb because its size is too large.
 -   Output options of Fontforge is set to default.
--   Created OTFs have a corruption of CID-tables. Therefore following CID modifications are conducted with using [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html).
+-   Created OTFs have a corruption of CID-tables. Therefore following CID modifications are conducted with [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html).
 
-### Modification procedure (Windows)
+### CID Modification (Windows)
+This is an example of KonGCode-Medium.
 
 1.  Install AFDKO.
 2.  rename ttx.cmd to ttxs.cmd.
-3.  Drag and Drop created font into ttxs.cmd. Many .ttx created.
-4.  Open _fontname.ttx_
-5.  Rename fontname.\_c\_m\_a\_p.ttx to its of Source Han Code JP.
-    -   e.g.) KonG-Medium.\_c\_m\_a\_p.ttx to SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx
-6.  Drag and Drop the correspond Source Han Code JP font ttxs.cmd. Many .ttx created.
-7.  Drag and Drop fontname.ttx then it creates a CID-fixed font with \\#1.
-8.  Precise procedures were described in Okoneya (<https://okoneya.jp/font/knowhow.html>).
+3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx created.
+4.  Open _KonGCode-Medium.ttx_
+    - Rename KonGCode-Medium.\_c\_m\_a\_p.ttx to SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx.
+5.  Drag and Drop SourceHanCodeJP-Medium.otf into ttxs.cmd.
+6.  Drag and Drop KonGCode-Medium.ttx. ttxs.cmd creates a CID-fixed font with the name of KonGCode-Medium\#1.otf.
+7.  Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>).
 
 ## History
 
@@ -49,4 +50,3 @@ Source Han Code JP and Source Han Serif are products of Adobe systems incorporat
 ## License
 
 SIL Open Font License 1.1.
-
