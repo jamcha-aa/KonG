@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="OTTO" ttLibVersion="3.9">
+  <GlyphOrder src="KonGCode-Medium.GlyphOrder.ttx"/>
+  <head src="KonGCode-Medium._h_e_a_d.ttx"/>
+  <hhea src="KonGCode-Medium._h_h_e_a.ttx"/>
+  <maxp src="KonGCode-Medium._m_a_x_p.ttx"/>
+  <OS_2 src="KonGCode-Medium.O_S_2f_2.ttx"/>
+  <name src="KonGCode-Medium._n_a_m_e.ttx"/>
+  <cmap src="SourceHanCodeJP-Medium._c_m_a_p.ttx"/>
+  <post src="KonGCode-Medium._p_o_s_t.ttx"/>
+  <CFF src="KonGCode-Medium.C_F_F_.ttx"/>
+  <BASE src="KonGCode-Medium.B_A_S_E_.ttx"/>
+  <FFTM src="KonGCode-Medium.F_F_T_M_.ttx"/>
+  <GDEF src="KonGCode-Medium.G_D_E_F_.ttx"/>
+  <GPOS src="KonGCode-Medium.G_P_O_S_.ttx"/>
+  <GSUB src="KonGCode-Medium.G_S_U_B_.ttx"/>
+  <hmtx src="KonGCode-Medium._h_m_t_x.ttx"/>
+  <vhea src="KonGCode-Medium._v_h_e_a.ttx"/>
+  <vmtx src="KonGCode-Medium._v_m_t_x.ttx"/>
+</ttFont>

@@ -24,22 +24,34 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 -   HKana, Kana, and VKana of Source Han Code JP are replaced to those of Source Han Serif with using [Fontforge](https://fontforge.github.io). Processed results were recorded to texts as .sfb.
     + Fontforge can not read .sfb because its size is too large.
 -   Output options of Fontforge is set to default.
--   Created OTFs have a corruption of CID-tables. Therefore following CID modifications are conducted with [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html).
+-   Generated otfs have a corruption of CID-tables. Therefore following CID modifications are conducted with [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html).
+-   Furthermore, balances of glyphs were modified for vertical writing.
 
-### CID Modification (Windows)
-This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>).
+### CID modifications (Windows)
+This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>). Specific ttx files are included to KonG/Source/CIDFix.
 
 1.  Install AFDKO.
 2.  Copy ttx.cmd to ttxs.cmd.
     - Edit ttxs.cmd "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py \%\*" to "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py -a -s \%\*"
-3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx are created.
+3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx are generated.
 4.  Open KonGCode-Medium.ttx
     - Edit "KonGCode-Medium.\_c\_m\_a\_p.ttx" to "SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx".
 5.  Drag and Drop SourceHanCodeJP-Medium.otf into ttxs.cmd.
 6.  Drag and Drop KonGCode-Medium.ttx. into ttxs.cmd. ttxs.cmd creates a CID-fixed font with the name of KonGCode-Medium\#1.otf.
 
-## History
+### Vertically modifications (Windows)
+This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>). Specific ttx files are included to KonG/Source/VFix.
 
+7. Remove ttx files. Rename KonGCode-Medium\#1.otf to KonGCode-Medium.otf.
+8. Drag and Drop KonGCode-Medium.otf, which was generated previous section, into ttxs.cmd.
+9. Download [o_vmtx-fix](https://okoneya.jp/font/knowhow.html) and extract.
+10. Launch vmtx-fix.exe. Drag and Drop KonGCode-Medium.\_v\_m\_t\_x.ttx. \_KonGCode-Medium.\_v\_m\_t\_x.ttx is generated. Put it back to where KonGCode-Medium.ttx locate.
+11. Open KonGCode-Medium.ttx
+    - Edit "KonGCode-Medium.\_v\_m\_t\_x.ttx" to "\_KonGCode-Medium.\_v\_m\_t\_x.ttx".
+12. Drag and Drop KonGCode-Medium.ttx. into ttxs.cmd. ttxs.cmd generates a vertically-fixed font with the name of KonGCode-Medium\#1.otf.
+
+## History
+-   12-20-2017 Vertical writing supported.
 -   12-19-2017 First release.
 
 ## Copyright
@@ -48,6 +60,7 @@ This is an example of KonGCode-Medium. Precise procedures are described at Okone
 
 Source Han Code JP and Source Han Serif are products of Adobe systems incorporated.
 
+o_vmtx-fix is a product of o_tamon (https://okoneya.jp/).
 ## License
 
 SIL Open Font License 1.1.
