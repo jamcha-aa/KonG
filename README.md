@@ -6,7 +6,7 @@ KonG (混んG) Code is a simple mixed fontsets of [Source Han Code JP](https://g
 
 KonG Code Medium consists of Source Han Code JP Medium and Source Han Serif ****Bold**** Kana.
 
-![KonG Code Medium](https://raw.githubusercontent.com/jamcha-aa/KonG/images/medium.png)
+![KonG Code Medium](https://raw.githubusercontent.com/jamcha-aa/KonG/master/images/medium.png)
 
 ## KonG Code Regular
 
