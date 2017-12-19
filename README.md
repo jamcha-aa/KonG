@@ -39,7 +39,7 @@ This is an example of KonGCode-Medium. Precise procedures are described at Okone
 5.  Drag and Drop SourceHanCodeJP-Medium.otf into ttxs.cmd.
 6.  Drag and Drop KonGCode-Medium.ttx. into ttxs.cmd. ttxs.cmd creates a CID-fixed font with the name of KonGCode-Medium\#1.otf.
 
-### Vertically modifications (Windows)
+### Vertical balance modifications (Windows)
 This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>). Specific ttx files are included to KonG/Source/VFix.
 
 7. Remove ttx files. Rename KonGCode-Medium\#1.otf to KonGCode-Medium.otf.
