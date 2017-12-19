@@ -12,7 +12,7 @@ KonG Code Medium consists of Source Han Code JP Medium and Source Han Serif **Bo
 
 KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **Medium** Kana.
 
-![KonG Code Regular](https://raw.githubusercontent.com/jamcha-aa/KonG/images/regular.png)
+![KonG Code Regular](https://raw.githubusercontent.com/jamcha-aa/KonG/master/images/regular.png)
 
 ## Download
 
