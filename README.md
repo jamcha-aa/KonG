@@ -31,7 +31,7 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 3.  Drag and Drop created font into ttxs.cmd. Many .ttx created.
 4.  Open _fontname.ttx_
 5.  Rename fontname.\_c\_m\_a\_p.ttx to its of Source Han Code JP.
-    -   e.g.) KonG-Medium.\_c\_\_m\_a\_p.ttx to SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx
+    -   e.g.) KonG-Medium.\_c\_m\_a\_p.ttx to SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx
 6.  Drag and Drop the correspond Source Han Code JP font ttxs.cmd. Many .ttx created.
 7.  Drag and Drop fontname.ttx then it creates a CID-fixed font with \\#1.
 8.  Precise procedures were described in Okoneya (<https://okoneya.jp/font/knowhow.html>).
