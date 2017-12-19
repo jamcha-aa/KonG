@@ -1,6 +1,6 @@
 # KonG Code
 
-KonG (混んG) Code is a simple mixed fontsets of [Source Han Code JP](https://github.com/adobe-fonts/source-han-code-jp) and [Source Han Serif](https://github.com/adobe-fonts/source-han-serif). 
+KonG (混んG) Code is a simply mixed opentype fontsets of [Source Han Code JP](https://github.com/adobe-fonts/source-han-code-jp) and [Source Han Serif](https://github.com/adobe-fonts/source-han-serif). 
 
 ## KonG Code Medium
 
@@ -17,6 +17,7 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 ## Download
 
 -   [Latest release](https://github.com/jamcha-aa/KonG/tree/master/release)
+-   Font installation is the same with [Source Han Serif](https://github.com/adobe-fonts/source-han-serif).
 
 ## Procedure
 
