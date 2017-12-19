@@ -30,7 +30,7 @@ This is an example of KonGCode-Medium. Precise procedures are described at Okone
 
 1.  Install AFDKO.
 2.  Copy ttx.cmd to ttxs.cmd.
-    - Edit ttxs.cmd "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py \%*" to "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py -a -s \%*"
+    - Edit ttxs.cmd "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py \%\*" to "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py -a -s \%\*"
 3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx are created.
 4.  Open KonGCode-Medium.ttx
     - Edit "KonGCode-Medium.\_c\_m\_a\_p.ttx" to "SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx".
