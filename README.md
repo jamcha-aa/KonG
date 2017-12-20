@@ -17,15 +17,15 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 ## Download
 
 -   [Latest release](https://github.com/jamcha-aa/KonG/tree/master/release)
--   Font installation is the same with [Source Han Serif](https://github.com/adobe-fonts/source-han-serif).
 
 ## Procedure
+Following sections describe making of KonG.
 
 -   HKana, Kana, and VKana of Source Han Code JP are replaced to those of Source Han Serif with using [Fontforge](https://fontforge.github.io). Processed results were recorded to texts as .sfb.
     + Fontforge can not read .sfb because its size is too large.
 -   Output options of Fontforge is set to default.
 -   Generated otfs have a corruption of CID-tables. Therefore following CID modifications are conducted with [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html).
--   Furthermore, balances of glyphs were modified for vertical writing.
+-   Furthermore, balances of glyphs were modified for vertical presentation.
 
 ### CID modifications (Windows)
 This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>). Specific ttx files are included to KonG/Source/CIDFix.
@@ -52,7 +52,7 @@ This is an example of KonGCode-Medium. Precise procedures are described at Okone
     - ttxs.cmd generates a vertically-fixed font with the name of KonGCode-Medium\#1.otf.
 
 ## History
--   12-20-2017 Vertical writing supported.
+-   12-20-2017 Fix glyphs for vertical presentation.
 -   12-19-2017 First release.
 
 ## Copyright
