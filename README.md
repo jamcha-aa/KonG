@@ -21,9 +21,9 @@ KonG Code Regular consists of Source Han Code JP Regular and Source Han Serif **
 ## Procedure
 Following sections describe making of KonG.
 
--   HKana, Kana, and VKana of Source Han Code JP are replaced to those of Source Han Serif with using [Fontforge](https://fontforge.github.io). Processed results were recorded to texts as .sfb.
+-   ```HKana```, ```Kana```, and ```VKana``` of Source Han Code JP are replaced to those of Source Han Serif with using [Fontforge](https://fontforge.github.io). Processed results were recorded as .sfb.
     + Fontforge can not read .sfb because its size is too large.
--   Output options of Fontforge is set to default.
+-   Export OTFs with Fontforge (default option).
 -   Generated otfs have a corruption of CID-tables. Therefore following CID modifications are conducted with [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html).
 -   Furthermore, balances of glyphs were modified for vertical presentation.
 
@@ -31,33 +31,37 @@ Following sections describe making of KonG.
 This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>). Specific ttx files are included to KonG/Source/CIDFix.
 
 1.  Install AFDKO.
-2.  Copy ttx.cmd to ttxs.cmd.
-    - Edit ttxs.cmd "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py \%\*" to "\%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py -a -s \%\*"
-3.  Drag and Drop KonGCode-Medium.otf into ttxs.cmd. Many .ttx are generated.
-4.  Open KonGCode-Medium.ttx
-    - Edit "KonGCode-Medium.\_c\_m\_a\_p.ttx" to "SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx".
-5.  Drag and Drop SourceHanCodeJP-Medium.otf into ttxs.cmd.
-6.  Drag and Drop KonGCode-Medium.ttx. into ttxs.cmd. ttxs.cmd creates a CID-fixed font with the name of KonGCode-Medium\#1.otf.
+2.  Rename ```ttx.cmd``` as ```ttxs.cmd```.
+    - Edit ```ttxs.cmd```
+    -  ```--- \%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py \%\*```
+    -  ```+++ \%AFDKO\_Python\% \%AFDKO\_SCRIPTS\%\\ttx.py -a -s \%\*```
+3.  Drag and Drop **KonGCode-Medium.otf** and **SourceHanCodeJP-Medium.otf** to ```ttxs.cmd```. Wait until process finished.
+4.  Edit ```KonGCode-Medium.ttx```
+    - ```--- KonGCode-Medium.\_c\_m\_a\_p.ttx```
+    - ```+++ SourceHanCodeJP-Medium.\_c\_m\_a\_p.ttx```
+5.  Drag and Drop ```KonGCode-Medium.ttx```. to ```ttxs.cmd```. ```ttxs.cmd``` exports a CID-fixed font with the name of **KonGCode-Medium\#1.otf**.
 
 ### Vertical balance modifications (Windows)
 This is an example of KonGCode-Medium. Precise procedures are described at Okoneya (<https://okoneya.jp/font/knowhow.html>). Specific ttx files are included to KonG/Source/VFix.
 
-7. Remove ttx files. Rename KonGCode-Medium\#1.otf to KonGCode-Medium.otf.
-8. Drag and Drop KonGCode-Medium.otf, which was generated previous section, into ttxs.cmd.
-9. Download [o_vmtx-fix](https://okoneya.jp/font/knowhow.html) and extract.
-10. Launch vmtx-fix.exe. Drag and Drop "KonGCode-Medium.\_v\_m\_t\_x.ttx" to it. "\_KonGCode-Medium.\_v\_m\_t\_x.ttx" is generated. Put it back to the original location.
-11. Open KonGCode-Medium.ttx
-    - Edit "KonGCode-Medium.\_v\_m\_t\_x.ttx" to "\_KonGCode-Medium.\_v\_m\_t\_x.ttx".
-12. Drag and Drop KonGCode-Medium.ttx into ttxs.cmd.
-    - ttxs.cmd generates a vertically-fixed font with the name of KonGCode-Medium\#1.otf.
+6. Remove ```.ttx``,` which is produced in **3**. Rename **KonGCode-Medium\#1.otf** to **KonGCode-Medium.otf**.
+7. Drag and Drop **KonGCode-Medium.otf** (former **KonGCode-Medium\#1.otf**) to ```ttxs.cmd```. Wait until process finished.
+8. Download [o_vmtx-fix](https://okoneya.jp/font/knowhow.html) and extract.
+9. Launch ```vmtx-fix.exe```. Drag and Drop ```KonGCode-Medium.\_v\_m\_t\_x.ttx``` to it. Then ```\_KonGCode-Medium.\_v\_m\_t\_x.ttx``` is generated.
+10. Edit ```KonGCode-Medium.ttx```
+    - ```--- KonGCode-Medium.\_v\_m\_t\_x.ttx```
+    - ```+++ \_KonGCode-Medium.\_v\_m\_t\_x.ttx```
+11. Drag and Drop ```KonGCode-Medium.ttx``` to ```ttxs.cmd```.
+    - ```ttxs.cmd``` generates a vertically-fixed font in the name of KonGCode-Medium\#1.otf.
 
 ## History
+-   08-09-2018 v1.01. Glyphs modified for newest Source Han Code JP (v2.0.11R).
 -   12-20-2017 Fix glyphs for vertical presentation.
--   12-19-2017 First release.
+-   12-19-2017 Initial release.
 
 ## Copyright
 
-(c) 2017 jamcha (jamcha.aa@gmail.com)
+(c) 2017-2018 jamcha (jamcha.aa@gmail.com)
 
 Source Han Code JP and Source Han Serif are products of Adobe systems incorporated.
 
